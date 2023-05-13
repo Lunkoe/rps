@@ -1,0 +1,54 @@
+body {
+    background-color: darkslategrey;
+}
+
+.buttons {
+    height: 20vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    align-items: center;
+}
+
+.buttons>* {
+    background-color: #1EAAFC;
+    color: black;
+    font-size: xx-large;
+    font-family: 'Trebuchet MS', sans-serif;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    border-radius: .2em;
+    border: 6px solid #171717;
+    flex: 1;
+    padding: 1.5em;
+}
+
+#result {
+    background-color: rgb(243, 243, 177);
+    color: black;
+    font-size: xx-large;
+    font-family: 'Trebuchet MS', sans-serif;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    border-radius: .2em;
+    border: 6px solid #171717;
+    padding: 1em;
+    width: 15em;
+    margin: 3em auto;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.computerChoice {
+    background-color: rgb(247, 104, 104);
+}
+
+.playerChoice {
+    background-color: rgb(104, 247, 115);
+}
+
+.both {
+    background: linear-gradient(to right,
+            rgb(247, 104, 104) 0%,
+            rgb(247, 104, 104) 50%,
+            rgb(104, 247, 115) 50%,
+            rgb(104, 247, 115) 100%);
+}
