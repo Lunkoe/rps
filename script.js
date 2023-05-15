@@ -1,12 +1,19 @@
 const buttons = document.querySelectorAll("button");
 
+
+console.log(buttons);
+
+
 buttons.forEach(button => button.addEventListener('click', rpsGame));
 
-function rpsGame(e) {
+function rpsGame() {
+
+    buttons.forEach(button => button.classList = "");
+
     let choices = ["Rock", "Paper", "Scissors"]
 
     let computerChoice = choices[Math.floor(Math.random() * choices.length)];
-    let playerChoice = e.target;
+    let playerChoice = this;
 
     if (computerChoice != playerChoice.id) {
         playerChoice.classList.add("playerChoice");
@@ -17,6 +24,9 @@ function rpsGame(e) {
 
     addText(playerChoice, computerChoice);
 }
+
+
+
 
 function addText(playerChoice, computerChoice) {
     const sentence = document.querySelector("#result");

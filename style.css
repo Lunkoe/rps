@@ -20,6 +20,8 @@ body {
     border: 6px solid #171717;
     flex: 1;
     padding: 1.5em;
+
+    transition: all 1s ease;
 }
 
 #result {
@@ -32,13 +34,14 @@ body {
     border: 6px solid #171717;
     padding: 1em;
     width: 15em;
+    height: 4em;
     margin: 3em auto;
     text-align: center;
     line-height: 1.5em;
 }
 
 .computerChoice {
-    background-color: rgb(247, 104, 104);
+    background-color: #ff5964;
 }
 
 .playerChoice {
@@ -46,9 +49,5 @@ body {
 }
 
 .both {
-    background: linear-gradient(to right,
-            rgb(247, 104, 104) 0%,
-            rgb(247, 104, 104) 50%,
-            rgb(104, 247, 115) 50%,
-            rgb(104, 247, 115) 100%);
+    background-color: rgb(235, 202, 142);
 }
